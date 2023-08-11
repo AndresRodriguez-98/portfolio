@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
+import ReactSwitch from "react-switch";
 
-const NavBar = () => {
+const NavBar = ({onThemeChange, checked}) => {
   const [nav, setNav] = useState(false);
 
   const links = [
@@ -71,6 +72,8 @@ const NavBar = () => {
           ))}
         </ul>
       )}
+      {/* BOTON DE MODO OSCURO */}
+      <ReactSwitch onChange={onThemeChange} checked={checked} />
     </div>
   );
 };

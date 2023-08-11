@@ -10,3 +10,13 @@
     font-family: 'Raleway', sans-serif;
   }
 }
+
+@media (prefers-color-scheme: dark){
+  body {
+    background: #282c34;
+    color: #fff;
+  }
+}
+
+
+/*from-gray-800 to-black */
