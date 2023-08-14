@@ -35,7 +35,7 @@ const NavBar = ({ onThemeChange, checked }) => {
     // el w-full le da un ancho del 100% (todo el ancho del contenedor)
     // fixed hace que el elemento siempre permanezca en el mismo lugar incluso si se desplaza la pag
     // con px hacemos paddings a la izquierda y a la derecha
-    <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed">
+    <div className="flex justify-between items-center w-full h-20 px-4 fixed dark:text-white dark:bg-black bg-neutral-250 text-cyan-700">
       <div>
         <h1 className="text-5xl font-signature ml-2">Andres</h1>
       </div>
@@ -46,7 +46,7 @@ const NavBar = ({ onThemeChange, checked }) => {
         {links.map(({ id, link }) => (
           <li
             key={id}
-            className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-125 duration-200"
+            className="px-4 cursor-pointer capitalize font-medium hover:scale-125 duration-200 dark:text-gray-500 text-cyan-700"
           >
             <Link to={link} smooth duration={500}>
               {link}
@@ -74,17 +74,24 @@ const NavBar = ({ onThemeChange, checked }) => {
       )}
       {/* BOTON DE MODO OSCURO */}
       <ReactSwitch
+        offColor="#8796A5"
+        onColor="#001e3c"
+        offHandleColor="#fff"
+        onHandleColor='#003892'
         onChange={onThemeChange}
         checked={checked}
         checkedIcon={
-          <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 20 20">
-            <path
-              fill="${encodeURIComponent(
-          '#fff',
-        )}"
-              d="M4.2 2.5l-.7 1.8-1.8.7 1.8.7.7 1.8.6-1.8L6.7 5l-1.9-.7-.6-1.8zm15 8.3a6.7 6.7 0 11-6.6-6.6 5.8 5.8 0 006.6 6.6z"
-            />
-          </svg>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              height: "100%",
+              fontSize: 20,
+            }}
+          >
+            🌙
+          </div>
         }
         uncheckedHandleIcon={
           <div
@@ -96,7 +103,7 @@ const NavBar = ({ onThemeChange, checked }) => {
               fontSize: 20,
             }}
           >
-            ☹
+            🔅
           </div>
         }
       />

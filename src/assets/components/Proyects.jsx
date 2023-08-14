@@ -7,15 +7,18 @@ const Proyects = () => {
     },
     {
       id: 2,
-    }
+    },
   ];
 
   return (
-    <div name="proyectos" className="bg-gradient-to-b w-full text-white md:h-screen">
+    <div
+      name="proyectos"
+      className="w-full md:h-screen bg-gradient-to-b from-neutral-300 to-cyan-100 text-cyan-900 dark:bg-gradient-to-b dark:from-black dark:to-gray-800 dark:text-white"
+    >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-500">Proyectos</p>
-          <p className="py-6"> Mirá algunos de mis trabajos:</p>
+          <p className="text-4xl font-bold inline border-b-4 border-b-cyan-900 dark:border-b-white">Proyectos</p>
+          <p className="text-xl mt-20"> Mirá algunos de mis trabajos:</p>
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
