@@ -33,7 +33,6 @@ export default function App() {
         <Proyects />
         <Experience />
         <Contact />
-        <SocialLinks />
       </div>
     </ThemeContext.Provider>
   );

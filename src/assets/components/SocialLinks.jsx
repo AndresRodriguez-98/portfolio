@@ -3,6 +3,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
+
 const SocialLinks = () => {
   const links = [
     {
@@ -48,14 +49,14 @@ const SocialLinks = () => {
 
   return (
     <div
-      className="hidden lg:flex flex-col top-[70%] left-0 fixed"
+      className="hidden flex-row lg:flex fixed top-[70%] left-0"
     >
       <ul>
         {links.map((link) => (
           <li
             key={link.id}
             className={
-              "flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 bg-gray-500" +
+              "flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 dark:bg-cyan-950 bg-blue-900" +
               " " +
               link.style
             }
