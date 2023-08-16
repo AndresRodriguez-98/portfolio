@@ -1,6 +1,8 @@
 import React from "react";
-import Section from "./Section";
-import p1 from "../images/tictactoe.png";
+import p1 from "../images/tateti.png";
+import p2 from "../images/Todo.png";
+import p3 from "../images/reactsocial.png";
+import p4 from "../images/pelis.png";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 
@@ -11,6 +13,27 @@ const Proyects = () => {
       image: p1,
       title: "Tic Tac Toe",
       github: "https://github.com/AndresRodriguez-98/Proyectos/tree/main/01-TicTacToe/01-tic-tac-toe",
+      demo: "https.//nodejs.org/en/",
+    },
+    {
+      id: 2,
+      image: p2,
+      title: "Todo App",
+      github: "https://github.com/AndresRodriguez-98/Proyectos/tree/main/todo-app-ts",
+      demo: "https.//nodejs.org/en/",
+    },
+    {
+      id: 3,
+      image: p3,
+      title: "Red Social",
+      github: "https://github.com/AndresRodriguez-98/udemy-red-social",
+      demo: "https.//nodejs.org/en/",
+    },
+    {
+      id: 4,
+      image: p4,
+      title: "Web de peliculas",
+      github: "https://github.com/AndresRodriguez-98/udemy-red-social",
       demo: "https.//nodejs.org/en/",
     },
   ];
@@ -31,9 +54,9 @@ const Proyects = () => {
         <div className="grid gap-8 lg:gap-14 lg:grid-cols-2">
           {proyectos.map(({ id, image, title, github, demo }) => (
             <div key={id} className="max-w-lg flex shadow-lg shadow-gray-300 rounded-2xl overflow-hidden">
-              <img src={image} alt={title} className="w-2/3" />
+              <img src={image} alt={title} className="mx-auto w-3/4" />
 
-              <div className="w-1/3 flex flex-col items-center justify-evenly p-1">
+              <div className="w-1/4 flex flex-col items-center justify-evenly p-3">
                 <h2 className="text-2xl">{title}</h2>
                 <a
                   className="text-2xl cursor-pointer duration-150 hover:scale-125"

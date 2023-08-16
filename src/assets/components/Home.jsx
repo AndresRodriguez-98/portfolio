@@ -65,16 +65,12 @@ const Home = () => {
             ))}
           </div>
         </div>
-        <div className="rounded-2xl mx-auto w-2/3 md:w-full">
+        <div>
           <img
             src={HeroImage}
             alt="my profile"
-            className="inline border-b-8 border-b-cyan-900"
-            width={1024}
-            height={2048}
-            decoding="async"
+            className="rounded-2xl mx-auto w-2/3 md:w-full"
             loading="lazy"
-            style={{ color: "transparent" }}
           />
         </div>
       </div>

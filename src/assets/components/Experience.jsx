@@ -71,9 +71,9 @@ const Experience = () => {
   return (
     <div
       name="experiencia"
-      className="w-full h-screen text-blue-900 bg-gradient-to-b from-cyan-100 to-neutral-300 dark:from-gray-800 dark:to-black dark:text-white"
+      className="w-full md:h-screen text-blue-900 bg-gradient-to-b from-cyan-100 to-neutral-300 dark:text-white dark:bg-gradient-to-b dark:from-gray-800 dark:to-black"
     >
-      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full">
+      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div>
           <p className="text-4xl font-bold border-b-4 border-b-blue-900 dark:border-b-cyan-600 dark:text-cyan-600 p-2 inline">Experiencia</p>
           <p className="text-xl mt-20">Stack Actual:</p>

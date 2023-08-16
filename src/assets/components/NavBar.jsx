@@ -35,7 +35,7 @@ const NavBar = ({ onThemeChange, checked }) => {
     // el w-full le da un ancho del 100% (todo el ancho del contenedor)
     // fixed hace que el elemento siempre permanezca en el mismo lugar incluso si se desplaza la pag
     // con px hacemos paddings a la izquierda y a la derecha
-    <div className="flex justify-between items-center w-full h-20 px-4 fixed dark:text-white dark:bg-black bg-neutral-250 text-blue-900">
+    <div className="flex justify-between items-center w-full h-20 px-4 fixed dark:text-white dark:bg-black bg-neutral-300 text-blue-900">
       <div>
         <h1 className="text-5xl font-signature ml-2">Andres</h1>
       </div>
