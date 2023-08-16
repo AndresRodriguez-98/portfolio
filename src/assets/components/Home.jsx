@@ -19,7 +19,7 @@ const Home = () => {
     },
     {
       id: 3,
-      link: "/resume.pdf",
+      link: "https://drive.google.com/file/d/1jaANk2KGol9WF3eNPWu9krej-_cYY5td/view",
       icon: <BsFillPersonLinesFill />,
       download: true,
     },
