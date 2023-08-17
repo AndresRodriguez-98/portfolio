@@ -1,8 +1,8 @@
 import React from "react";
 import p1 from "../images/tateti.png";
-import p2 from "../images/Todo.png";
-import p3 from "../images/reactsocial.png";
-import p4 from "../images/pelis.png";
+import p2 from "../images/todoapp.png";
+import p3 from "../images/redsocial.png";
+import p4 from "../images/peliculas.png";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 
