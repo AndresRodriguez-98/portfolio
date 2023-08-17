@@ -28,12 +28,12 @@ const Home = () => {
   return (
     <div
       name="inicio"
-      className="h-screen w-full bg-gradient-to-b from-neutral-300 via-neutral-300 to-cyan-100 dark:bg-gradient-to-b dark:from-black dark:via-black dark:to-gray-800 dark:text-white"
+      className="w-full h-screen bg-gradient-to-b from-neutral-300 via-neutral-300 to-cyan-100 dark:bg-gradient-to-b dark:from-black dark:via-black dark:to-gray-800 dark:text-white"
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center h-full">
           {/* TITULO */ }
-          <h2 className="text-4xl md:text-7xl font-bold text-blue-900 dark:text-cyan-600">
+          <h2 className="text-4xl mt-56 md:text-7xl font-bold text-blue-900 dark:text-cyan-600">
             Desarrollador FullStack con React
           </h2>
           {/* SUBTITULO */ }
