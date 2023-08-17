@@ -13,7 +13,7 @@ const About = () => {
           </p>
         </div>
 
-        <p className="text-xl mt-20">
+        <p className="text-xl mt-10">
           Con 25 años, aspiro a ingresar al mundo laboral del desarrollo web para expandir mi experiencia y adquirir
           nuevas habilidades. Soy una persona proactiva, autodidacta y con capacidad para resolver problemas. Mi enfoque
           en el trabajo en equipo me impulsa a lograr progresos personales y profesionales dentro de esta industria en

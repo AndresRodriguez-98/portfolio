@@ -56,8 +56,8 @@ const Proyects = () => {
             <div key={id} className="max-w-lg flex shadow-lg shadow-gray-300 rounded-2xl overflow-hidden">
               <img src={image} alt={title} className="mx-auto w-3/4" />
 
-              <div className="w-1/4 flex flex-col items-center justify-evenly p-3">
-                <h2 className="text-2xl">{title}</h2>
+              <div className="w-1/3 flex flex-col items-center justify-evenly p-3">
+                <h2>{title}</h2>
                 <a
                   className="text-2xl cursor-pointer duration-150 hover:scale-125"
                   href={github}
