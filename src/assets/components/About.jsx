@@ -14,15 +14,20 @@ const About = () => {
         </div>
 
         <p className="text-xl mt-10">
-          Aspiro a ingresar al mundo laboral del desarrollo web para expandir mi experiencia y adquirir
-          nuevas habilidades. Soy una persona proactiva, autodidacta y con capacidad para resolver problemas.
+          Aspiro a ingresar al mundo laboral del desarrollo web para expandir mi experiencia y adquirir nuevas
+          habilidades. Soy una persona proactiva, autodidacta y con capacidad para resolver problemas.
         </p>
 
         <br />
 
         <p className="text-xl text-black dark:text-cyan-200">
-          Mi pasión son los videojuegos y la música. Dentro del desarrollo web, mi mayor experiencia como developer se
-          encuentra en el área del frontend con el uso de ReactJs y Tailwind CSS.
+          Dentro del desarrollo web, mi mayor experiencia como developer se encuentra en el área del frontend, con el
+          uso de ReactJs o React Native y Tailwind CSS o Material UI.
+        </p>
+
+        <p className="text-xl mt-10">
+          Mi hobby son los videojuegos y la música. Me gustan los e-sport y la competitividad en equipo. Soy una persona
+          apasionada por lo que hago, amante de la programación y el mundo IT.
         </p>
       </div>
     </div>

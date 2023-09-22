@@ -3,6 +3,7 @@ import p1 from "../images/tateti.png";
 import p2 from "../images/todoapp.png";
 import p3 from "../images/redsocial.png";
 import p4 from "../images/peliculas.png";
+import p5 from "../images/quizz.png";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 
@@ -10,27 +11,34 @@ const Proyects = () => {
   const proyectos = [
     {
       id: 1,
+      image: p5,
+      title: "Quizz JS",
+      github: "https://github.com/AndresRodriguez-98/quizz-javascript/",
+      demo: "https://andresrodriguez-98.github.io/TicTacToe/",
+    },
+    {
+      id: 2,
       image: p1,
       title: "Tic Tac Toe",
       github: "https://github.com/AndresRodriguez-98/TicTacToe",
       demo: "https://andresrodriguez-98.github.io/TicTacToe/",
     },
     {
-      id: 2,
+      id: 3,
       image: p2,
       title: "Todo App",
       github: "https://github.com/AndresRodriguez-98/Todo-app",
       demo: "https://andresrodriguez-98.github.io/Todo-app/",
     },
     {
-      id: 3,
+      id: 4,
       image: p3,
       title: "Red Social",
       github: "https://github.com/AndresRodriguez-98/udemy-red-social",
       demo: "https://github.com/AndresRodriguez-98/udemy-red-social",
     },
     {
-      id: 4,
+      id: 5,
       image: p4,
       title: "Web de peliculas",
       github: "https://github.com/AndresRodriguez-98/proyecto-01-udemy-mern",
@@ -53,7 +61,7 @@ const Proyects = () => {
 
         <div className="grid gap-8 lg:gap-14 lg:grid-cols-2">
           {proyectos.map(({ id, image, title, github, demo }) => (
-            <div key={id} className="max-w-lg flex shadow-lg shadow-gray-300 rounded-2xl overflow-hidden">
+            <div key={id} className="max-w-lg flex shadow-lg shadow-cyan-600 rounded-2xl overflow-hidden">
               <img src={image} alt={title} className="mx-auto w-3/4" />
 
               <div className="w-1/3 flex flex-col items-center justify-evenly p-3">

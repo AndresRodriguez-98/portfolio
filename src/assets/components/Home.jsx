@@ -69,7 +69,7 @@ const Home = () => {
           </div>
         </div>
         <div>
-          <img src={HeroImage} alt="my profile" className="rounded-2xl mx-auto w-2/3 md:w-full" />
+          <img src={HeroImage} alt="my profile" className="hidden md:block rounded-md mx-auto w-2/3 md:w-full mt-40" />
         </div>
       </div>
     </div>
