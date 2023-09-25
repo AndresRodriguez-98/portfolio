@@ -19,7 +19,7 @@ const Home = () => {
     },
     {
       id: 3,
-      link: "https://drive.google.com/file/d/1jaANk2KGol9WF3eNPWu9krej-_cYY5td/view",
+      link: "https://drive.google.com/file/d/1Nhp0Ptygx7q-j4c0yG_wUseCiju3dmey/view?usp=sharing",
       icon: <BsFillPersonLinesFill />,
       download: true,
     },
