@@ -34,13 +34,13 @@ const NavBar = ({ onThemeChange, checked }) => {
     // el item-center es para alinear artículos a lo largo del centro del eje transversal del contenedor
     // el w-full le da un ancho del 100% (todo el ancho del contenedor)
     // fixed hace que el elemento siempre permanezca en el mismo lugar incluso si se desplaza la pag
-    // con px hacemos paddings a la izquierda y a la derecha
+  
     <div className="flex justify-between items-center w-full h-20 px-4 fixed dark:text-white dark:bg-black bg-neutral-300 text-blue-900">
       <div>
-        <h1 className="text-5xl font-signature ml-2">Andres</h1>
+        <h1 className="text-3xl font-signature ml-2 text-cyan-600">Andrés</h1>
       </div>
 
-      {/* como tailwind es movile first, primero siempre debe estar hidden el ul (por defecto)*/}
+      {/* como tailwind es mobile first, primero siempre debe estar hidden el ul (por defecto)*/}
       {/* desp del hidden, hacemos que haya un flex en una consulta de medios (cuando pasamos el mouse*/}
       <ul className="hidden md:flex">
         {links.map(({ id, link }) => (
@@ -55,8 +55,6 @@ const NavBar = ({ onThemeChange, checked }) => {
         ))}
       </ul>
 
-      {/* con el onclick este le estamos dando capacidad de cambiar el estado cuando clickemos*/}
-      {/* si estaba false cambia a true y viceversa*/}
       <div onClick={() => setNav(!nav)} className="cursor-pointer pr-4 z-10 text-gray-500 md:hidden">
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>

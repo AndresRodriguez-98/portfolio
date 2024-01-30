@@ -33,13 +33,16 @@ const Home = () => {
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center px-4 md:flex-row">
         <div className="flex flex-col justify-center h-full">
           {/* TITULO */ }
-          <h2 className="text-4xl mt-56 md:text-7xl font-bold text-blue-900 dark:text-cyan-600">
-            Desarrollador FullStack con React
+          <h2 className="text-4xl mt-48 md:text-7xl font-bold text-blue-900 dark:text-cyan-600">
+            Andrés Rodriguez.
           </h2>
+          <h3 className="text-4xl mt-8 md:text-7xl font-bold text-blue-900 dark:text-cyan-800">
+            Desarrollador web
+          </h3>
           {/* SUBTITULO */ }
           <p className="dark:text-white text-stone-950 py-4 max-w-md text-xl">
-            ¡Hola! <span className="animate-pulse text-4xl">👋</span> Soy Andrés, tengo 25 años y un amor profundo por
-            la tecnología
+            ¡Hola! Tengo 25 años y un amor profundo por
+            la tecnología. Actualmente, estoy interesado en especializarme como web developer.
           </p>
           {/* BOTON PROYECTOS */ }
           <Link
@@ -54,7 +57,7 @@ const Home = () => {
             </span>
           </Link>
 
-          <div className="flex justify-evenly py-8 lg:py-16 text-3xl w-full md:w-1/3">
+          <div className="flex justify-evenly py-6 lg:py-16 text-3xl w-full md:w-1/3">
             {SOCIAL.map(({ id, link, icon, download }) => (
               <a
                 href={link}
@@ -68,9 +71,9 @@ const Home = () => {
             ))}
           </div>
         </div>
-        <div>
+        {/* <div>
           <img src={HeroImage} alt="my profile" className="hidden md:block rounded-md mx-auto w-2/3 md:w-full mt-40" />
-        </div>
+        </div> */}
       </div>
     </div>
   );
